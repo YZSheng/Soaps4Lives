@@ -1,0 +1,63 @@
+extends layout
+
+block content
+	script(type='text/javascript').
+		$('.navbar-fixed-top')
+			.find('li').removeClass('active')
+			.find('a[href^="partners"]').parent().addClass('active');
+	.container
+		.row#main
+			.col-md-3
+				div(role='complementary')
+					ul.nav.side.affix
+						li
+							a(href='#strategic-partners') Strategic Partners
+						li
+							a(href='#hospitality-partners') Hospitality Partners
+						li
+							a(href='#ngco-partners') Non-Governmental and Charity Organization Partners
+						li
+							a(href='#corporate-partners') Corporate Partners
+			.col-md-9(role='main')
+				h2.title OUR PARTNERS
+				p Our partners are vital to our business and mission. We treasure our relationships with all our stakeholders and partners, and will not spare any effort to help them achieve their respective business objectives and organizational mission.
+
+				hr
+
+				.row
+					.desc-image.strategic-partner
+					div
+						#strategic-partner.topnav-offset
+						h3 Strategic Partners
+						p Our strategic partners are key facilitators of our mission and vision.
+						p The list of partners will be up soon.
+
+				hr
+
+				.row
+					.desc-image.hospitality-partner
+					div
+						#hospitality-partner.topnav-offset
+						h3 Hospitality Partners
+						p We partner with hotels and other hospitality centers to save lives of millions and the environment by collecting and recycling slightly used soaps and other hygiene amenities that are then donated to disadvantages or at risk communities to prevent and eradicate child mortality.
+						p The list of partners will be up soon.
+
+				hr
+
+				.row
+					.desc-image.ngco-partner
+					div
+						#ngco-partner.topnav-offset
+						h3 Non-Governmental and Charity Organization Partners
+						p Soaps4Lives collaborates with established, Non-Governmental and Charity organizations to reach out to its targeted communities, and to deliver the lives saving items in a strictly controlled and supervised manner. 
+						p The list of partners will be up soon.	
+
+				hr
+
+				.row
+					.desc-image.corp-partner
+					div
+						#corporate-partner.topnav-offset
+						h3 Corporate Partners
+						p We partner with corporate organizations to deliver hygiene and disaster relief programs to specific communities that have been identified to be at risk.
+						p The list of partners will be up soon.			

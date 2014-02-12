@@ -1,0 +1,152 @@
+extends layout
+
+block content
+	script(type='text/javascript').
+		$('.navbar-fixed-top')
+			.find('li').removeClass('active')
+			.find('a[href^="get_involved"]').parent().addClass('active');
+	.container
+		.row#main
+			.col-md-3
+				div(role='complementary')
+					ul.nav.side.affix
+						li
+							a(href='#ambassadors') Soaps4Lives Ambassadors
+						li
+							a(href='#heroes') Soaps4Lives Heroes (Volunteers)
+						li
+							a(href='#artist') Soaps4Lives Artist
+						li
+							a(href='#gift') Corporate Soaps4Communities Gift
+			.col-md-9(role='main')
+				h2.title GET INVOLVED
+				.row
+					.icons.col-md-1
+						i.fa.fa-heart
+					.col-md-11
+						#ambassadors.topnav-offset
+						h3 Soaps4Lives Ambassadors
+						p Soaps4Lives ambassadors are our community connectors and good-doers. They share our mission and are committed to take effective action to enable and facilitate its realization. To know more about our Soaps4Lives Ambassadors programs contact us at
+							a(href='mailto:info@soaps4lives.com') info@soaps4lives.com
+				
+				hr
+				
+				.row
+					.icons.col-md-1
+						i.fa.fa-flag
+					.col-md-11
+						#heroes.topnav-offset
+						h3 Soaps4Lives Heroes (Volunteers)
+						p 
+							| Have you ever wondered how being a hero would feel like? You want to know how fun and fulfilling it can be to be involved in something that has such an impact as saving lives and preserving the environment? Join our amazing and fun Soaps4Lives Heroes team of volunteers 
+							a(href='javascript:void(0);', data-toggle='modal', data-target='#heroForm') here
+							| .
+
+
+				//- Start of Hero Volunteer Modal
+
+				.modal.fade#heroForm(tableIndex='-1', role='dialog', aria-labelledby='heroModalLabel', aria-hidden='true')
+					.modal-dialog
+						.modal-content
+							form.form-horizontal#heroVolForm(role='form', action='becomeHero', method='post')
+								.modal-header
+									button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+									h4.modal-title#heroModalLabel Become a Soaps4Lives Hero
+								.modal-body
+									.form-group
+										label.col-sm-2.control-label(for='heroVolName') Name*
+										.col-sm-10
+											input.form-control#heroVolName(type='text', name='heroVolName', placeholder='Enter name', required)
+									.form-group
+										label.col-sm-2.control-label(for='heroVolEmail') Email*
+										.col-sm-10
+											input.form-control#heroVolEmail(type='email', name='heroVolEmail', placeholder='Enter email', required)	
+									.form-group
+										label.col-sm-2.control-label(for='heroVolOrg') Orgnisation*
+										.col-sm-10
+											input.form-control#heroVolOrg(type='text', name='heroVolOrg', placeholder='Enter orgnisation', required)	
+									.form-group
+										label.col-sm-2.control-label(for='heroVolPos') Position
+										.col-sm-10
+											input.form-control#heroVolPos(type='text', name='heroVolPos', placeholder='Enter position')
+									.form-group
+										label.col-sm-2.control-label(for='heroVolPhone') Phone*
+										.col-sm-10
+											input.form-control#heroVolPhone(type='tel', name='heroVolPhone', placeholder='Enter phone number', required)
+									.form-group.txtarea
+										label(for='heroVolMsg') Tell us why you are excited about our Heroes Team
+										textarea.form-control#heroVolMsg(rows=4, name='heroVolMsg')
+									p.compulsory * Compulsory fields
+								.modal-footer
+									button.btn.btn-default(type='button', data-dismiss='modal') Cancel
+									button.btn.btn-primary(type='submit') Submit
+
+				//- End of Hero Volunteer Modal
+
+				hr
+
+				.row
+					.icons.col-md-1
+						i.fa.fa-magic
+					.col-md-11
+						#artist.topnav-offset
+						h3 Soaps4Works Artist
+						p 
+							| You want to learn and master the art of soap carving and soap making? Get in touch with us and join our Soaps4Works School program. We deliver soap carving and soap making workshop to communities. Contact us at 
+							a(href='mailto:info@soaps4lives.com') info@soaps4lives.com
+
+				hr
+
+				.row
+					.icons.col-md-1
+						i.fa.fa-gift
+					.col-md-11
+						#gift.topnav-offset
+						h3 Corporate Soaps4Communities Gift
+						p 
+							| You are a corporation, a business owner, an employee, a school official, a student… you want to offer a gift to your employees, your community, your colleagues, your students, or you simply want to organization some bonding activities, get in touch with us 
+							a(href='javascript:void(0);', data-toggle='modal', data-target='#corpForm') here
+							| .
+
+
+				//- Start of Corporate Gift Modal
+
+				.modal.fade#corpForm(tableIndex='-1', role='dialog', aria-labelledby='corpModalLabel', aria-hidden='true')
+					.modal-dialog
+						.modal-content
+							form.form-horizontal#corpGiftForm(role='form', action='corpGift', method='post')
+								.modal-header
+									button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+									h4.modal-title#corpModalLabel Corporate Gift
+								.modal-body
+									.form-group
+										label.col-sm-2.control-label(for='corpName') Name*
+										.col-sm-10
+											input.form-control#corpName(type='text', name='corpName', placeholder='Enter name')
+									.form-group
+										label.col-sm-2.control-label(for='corpEmail') Email*
+										.col-sm-10
+											input.form-control#corpEmail(type='email', name='corpEmail', placeholder='Enter email')	
+									.form-group
+										label.col-sm-2.control-label(for='corpOrg') Orgnisation*
+										.col-sm-10
+											input.form-control#corpOrg(type='text', name='corpOrg', placeholder='Enter orgnisation')	
+									.form-group
+										label.col-sm-2.control-label(for='corpPos') Position
+										.col-sm-10
+											input.form-control#corpPos(type='text', name='corpPos', placeholder='Enter position')
+									.form-group
+										label.col-sm-2.control-label(for='corpPhone') Phone*
+										.col-sm-10
+											input.form-control#corpPhone(type='tel', name='corpPhone', placeholder='Enter phone number')
+									.form-group.txtarea
+										label(for='corpMsg') Tell us your ideas
+										textarea.form-control#corpMsg(rows=4, name='corpMsg')
+									p.compulsory * Compulsory fields
+								.modal-footer
+									button.btn.btn-default(type='button', data-dismiss='modal') Cancel
+									button.btn.btn-primary(type='submit') Submit
+
+				//- End of Corporate Gift Modal
+
+

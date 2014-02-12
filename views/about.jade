@@ -1,0 +1,79 @@
+extends layout
+
+block content
+	script(type='text/javascript').
+		$('.navbar-fixed-top')
+			.find('li').removeClass('active')
+			.find('a[href^="about"]').parent().addClass('active');
+	.container
+		.row#main
+			.col-md-3
+				div(role='complementary')
+					ul.nav.side.affix
+						li
+							a(href='#vision') Our Vision
+						li
+							a(href='#mission') Our Mission
+						li
+							a(href='#teams') Out Teams
+							ul.nav.sub
+								li
+									a(href='#boa') Board of Advisors
+								li
+									a(href='#bod') Board of Directors
+			.col-md-9(role='main')
+				h2.title ABOUT US
+				p 
+					| Child Mortality and Environmental Pollution are two major issues that not only pose significant social and economic threats, but also jeopardize the future of the planet. As social entrepreneurs, we believe with a right approach; one that creates the necessary partnership framework between the private sector and communities, more lives and our environment would be better preserved. But most importantly, the right to “life” can be restored to millions of children dying in Asia and Africa every year. For this reason and built upon proven social enterprise models, we have created 
+					strong Soaps4Lives International
+					| .
+				p
+					strong Soaps4Lives' 
+					| primary objective is to provide a social businesslike solution to the problem highlighted above; a solution that saves lives and the environment, but also contributes to the economic development by creating jobs at the BOP level. 
+
+				hr
+
+				.row
+					.icons.col-md-1
+						i.fa.fa-compass
+					.col-md-11
+						#vision.topnav-offset
+						h3 Our Vission
+						p Soaps4Lives envisions on one hand the full restoration of the “right to life” to every child irrespective of their social condition, through the eradication of child mortality due to no or poor access to hygiene amenities; and the implementation of full cycle waste recycling system for the Hospitality Industry.
+
+				hr
+
+				.row
+					.icons.col-md-1
+						i.fa.fa-anchor
+					.col-md-11
+						#mission.topnav-offset
+						h3 Our Mission
+						p Soaps4Lives’ mission is twofold:
+						p
+							span.pointer 1
+							span We aim at promoting Hygiene in underprivileged and vulnerable communities across Asia and Africa, by providing free soap and facilitating hygiene education.
+						p
+							span.pointer 2
+							span We ensure Environmental Sustainability by reducing environmental pollution from the hospitality industry and providing alternative waste management solutions.
+						p
+							We place a special emphasis in achieving our mission in an economic viable way, by creating positive social, environmental but also economic impact.
+
+				hr
+
+				.row
+					.icons.col-md-1
+						i.fa.fa-cogs
+					.col-md-11
+						#teams.topnav-offset
+						h3 Our Teams
+						p Soaps4Lives operates under the watch of two key bodies: The Board of Advisors and the Board of Directors.
+						h4 
+							span#boa.topnav-offset
+							| Board of Advisors
+						p The Board of Advisors is an external body set up to provide advisory management as well as network and advocacy support to Soaps4Lives. All Advisory board members’ profiles will be up soon!
+						h4 
+							span#bod.topnav-offset
+							| Board of Directors
+						p The Board of Directors is responsible for setting the overall long-term and short-term objectives, the general strategy, as well as ensuring corporate compliance, risk mitigation and control. It is currently composed of the Founder Gildas Yombi, and the Head of Strategy Development, Jovin Hurry.
+						p The board will be soon completed by two independent board members.

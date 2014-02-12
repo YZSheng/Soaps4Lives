@@ -1,0 +1,80 @@
+extends layout
+
+block content
+	script(type='text/javascript').
+		$('.navbar-fixed-top')
+			.find('li').removeClass('active')
+			.find('a[href^="serv_prog"]').parent().addClass('active');
+	.container
+		.row#main
+			.col-md-3
+				div(role='complementary')
+					ul.nav.side.affix
+						li
+							a(href='#soaps4recycle') Soaps4Recycle
+						li
+							a(href='#soaps4communities') Soaps4Communities
+						li
+							a(href='#soaps4works') Soaps4Works
+						li
+							a(href='#wma') Waste Management Advisory
+			.col-md-9(role='main')
+				h2.title SERVICES AND PROGRAMS
+				p 
+					| Soaps4Lives’ solutions (
+					a(href='#soaps4recycle', title='Soaps4Recycle') Soaps4Recycle
+					| , 
+					a(href='#soaps4communities', title='Soaps4Communities') Soaps4Communities
+					| , and 
+					a(href='#soaps4works', title='Soaps4Works') Soaps4Works
+					| ) are designed to provide hotels and other corporations with the means and strategies to implement business and socially relevant CSR programs directed at improving their social and environmental performance, and reducing child mortality.
+
+				hr
+
+				.row
+					.desc-image.s4r
+					div
+						#soaps4recycle.topnav-offset
+						h3 Soaps4Recycle
+						p Primarily designed for Hotels, Soaps4Recycle is an innovative program to reduce your environmental impact and give children around the world a chance to stay healthy and happy
+
+				hr
+
+				.row
+					.desc-image.s4c
+					div
+						#soaps4communities.topnav-offset
+						h3 Soaps4Communities
+						p These are turnkey Corporate Sustainability and Responsibility services and programs for the benefits of corporations and society. These programs provide tangible business and social value: 
+						p To learn more about our Soap4Communities solutions, contact us 
+							a(href='mailto:contact@soaps4lives.com') here
+							| .
+				hr
+
+				.row
+					.desc-image.s4w
+					div
+						#soaps4works.topnav-offset
+						h3 Soaps4Works
+						p A program specifically designed for community and employee engagement. This program is available for any businesses that would like to give back and have lots of fun doing it.
+						p To learn more about our Soap4Works solutions, contact us 
+							a(href='mailto:contact@soaps4lives.com') here
+							| .
+				hr
+
+				.row
+					.icons.col-md-1
+						i.fa.fa-bullhorn
+					.col-md-11
+						#wma.topnav-offset
+						h3 Waste Management Advisory
+						p Our Waste Management Advisory solutions are designed to help corporation enhance their environmental performance and impact: 
+						p
+							span.pointer 1
+							span Waste management policy
+						p
+							span.pointer 2
+							span Waste to Society programs
+						p to learn more about our Waste Management Advisory solutions, contact us 
+							a(href='mailto:contact@soaps4lives.com') here
+							| .

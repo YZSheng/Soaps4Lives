@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="soaps, lives, ngo, npo, green, recycling">
+    <meta name="description" content="Soaps4Lives">
+    <meta name="author" content="Sheng Yunzhou">
+    <title>Soaps4Lives</title>
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="/stylesheets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/font-awesome.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crete+Round">
+    <link rel="stylesheet" href="/stylesheets/page.css">
+    <!-- [if gt IE 9] <!-->
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <!-- <![endif]-->
+    <script type="text/javascript" src="./javascripts/lib/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./javascripts/vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-46910022-1', 'soaps4lives.com');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="nav-header">
+          <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a id="logo" href="index" class="navbar-brand"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="partners">Partners</a></li>
+            <li><a href="serv_prog">Services &amp; Programmes</a></li>
+            <li><a href="get_involved">Get Involved</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $('.navbar-fixed-top')
+       .find('li').removeClass('active')
+       .find('a[href^="get_involved"]').parent().addClass('active');
+    </script>
+    <div class="container">
+      <div id="main" class="row">
+        <div class="col-md-3">
+          <div role="complementary">
+            <ul class="nav side affix">
+              <li><a href="#ambassadors">Soaps4Lives Ambassadors</a></li>
+              <li><a href="#heroes">Soaps4Lives Heroes (Volunteers)</a></li>
+              <li><a href="#artist">Soaps4Lives Artist</a></li>
+              <li><a href="#gift">Corporate Soaps4Communities Gift</a></li>
+            </ul>
+          </div>
+        </div>
+        <div role="main" class="col-md-9">
+          <h2 class="title">GET INVOLVED</h2>
+          <div class="row">
+            <div class="icons col-md-1"><i class="fa fa-heart"></i></div>
+            <div class="col-md-11">
+              <div id="ambassadors" class="topnav-offset"></div>
+              <h3>Soaps4Lives Ambassadors</h3>
+              <p>Soaps4Lives ambassadors are our community connectors and good-doers. They share our mission and are committed to take effective action to enable and facilitate its realization. To know more about our Soaps4Lives Ambassadors programs contact us at<a href="mailto:info@soaps4lives.com">info@soaps4lives.com</a></p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="icons col-md-1"><i class="fa fa-flag"></i></div>
+            <div class="col-md-11">
+              <div id="heroes" class="topnav-offset"></div>
+              <h3>Soaps4Lives Heroes (Volunteers)</h3>
+              <p>
+                 
+                Have you ever wondered how being a hero would feel like? You want to know how fun and fulfilling it can be to be involved in something that has such an impact as saving lives and preserving the environment? Join our amazing and fun Soaps4Lives Heroes team of volunteers <a href="javascript:void(0);" data-toggle="modal" data-target="#heroForm">here</a>.
+              </p>
+            </div>
+          </div>
+          <div id="heroForm" tableIndex="-1" role="dialog" aria-labelledby="heroModalLabel" aria-hidden="true" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <form id="heroVolForm" role="form" action="becomeHero" method="post" class="form-horizontal">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close">&times;</button>
+                    <h4 id="heroModalLabel" class="modal-title">Become a Soaps4Lives Hero</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <label for="heroVolName" class="col-sm-2 control-label">Name*</label>
+                      <div class="col-sm-10">
+                        <input id="heroVolName" type="text" name="heroVolName" placeholder="Enter name" required class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="heroVolEmail" class="col-sm-2 control-label">Email*</label>
+                      <div class="col-sm-10">
+                        <input id="heroVolEmail" type="email" name="heroVolEmail" placeholder="Enter email" required class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="heroVolOrg" class="col-sm-2 control-label">Orgnisation*</label>
+                      <div class="col-sm-10">
+                        <input id="heroVolOrg" type="text" name="heroVolOrg" placeholder="Enter orgnisation" required class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="heroVolPos" class="col-sm-2 control-label">Position</label>
+                      <div class="col-sm-10">
+                        <input id="heroVolPos" type="text" name="heroVolPos" placeholder="Enter position" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="heroVolPhone" class="col-sm-2 control-label">Phone*</label>
+                      <div class="col-sm-10">
+                        <input id="heroVolPhone" type="tel" name="heroVolPhone" placeholder="Enter phone number" required class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group txtarea">
+                      <label for="heroVolMsg">Tell us why you are excited about our Heroes Team</label>
+                      <textarea id="heroVolMsg" rows="4" name="heroVolMsg" class="form-control"></textarea>
+                    </div>
+                    <p class="compulsory">* Compulsory fields</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="icons col-md-1"><i class="fa fa-magic"></i></div>
+            <div class="col-md-11">
+              <div id="artist" class="topnav-offset"></div>
+              <h3>Soaps4Works Artist</h3>
+              <p>
+                 
+                You want to learn and master the art of soap carving and soap making? Get in touch with us and join our Soaps4Works School program. We deliver soap carving and soap making workshop to communities. Contact us at <a href="mailto:info@soaps4lives.com">info@soaps4lives.com</a>
+              </p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="icons col-md-1"><i class="fa fa-gift"></i></div>
+            <div class="col-md-11">
+              <div id="gift" class="topnav-offset"></div>
+              <h3>Corporate Soaps4Communities Gift</h3>
+              <p>
+                 
+                You are a corporation, a business owner, an employee, a school official, a student… you want to offer a gift to your employees, your community, your colleagues, your students, or you simply want to organization some bonding activities, get in touch with us <a href="javascript:void(0);" data-toggle="modal" data-target="#corpForm">here</a>.
+              </p>
+            </div>
+          </div>
+          <div id="corpForm" tableIndex="-1" role="dialog" aria-labelledby="corpModalLabel" aria-hidden="true" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <form id="corpGiftForm" role="form" action="corpGift" method="post" class="form-horizontal">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close">&times;</button>
+                    <h4 id="corpModalLabel" class="modal-title">Corporate Gift</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <label for="corpName" class="col-sm-2 control-label">Name*</label>
+                      <div class="col-sm-10">
+                        <input id="corpName" type="text" name="corpName" placeholder="Enter name" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="corpEmail" class="col-sm-2 control-label">Email*</label>
+                      <div class="col-sm-10">
+                        <input id="corpEmail" type="email" name="corpEmail" placeholder="Enter email" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="corpOrg" class="col-sm-2 control-label">Orgnisation*</label>
+                      <div class="col-sm-10">
+                        <input id="corpOrg" type="text" name="corpOrg" placeholder="Enter orgnisation" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="corpPos" class="col-sm-2 control-label">Position</label>
+                      <div class="col-sm-10">
+                        <input id="corpPos" type="text" name="corpPos" placeholder="Enter position" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="corpPhone" class="col-sm-2 control-label">Phone*</label>
+                      <div class="col-sm-10">
+                        <input id="corpPhone" type="tel" name="corpPhone" placeholder="Enter phone number" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group txtarea">
+                      <label for="corpMsg">Tell us your ideas</label>
+                      <textarea id="corpMsg" rows="4" name="corpMsg" class="form-control"></textarea>
+                    </div>
+                    <p class="compulsory">* Compulsory fields</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container marketing">
+      <hr class="featurette-divider last">
+      <div id="social">
+        <p>Connect with us:<a href="https://www.facebook.com/Soaps4Lives?fref=ts" title="Facebook"><i class="fa fa-facebook-square"></i></a><a href="http://www.twitter.com/soaps4lives" title="Twitter"><i class="fa fa-twitter"></i></a><a href="https://plus.google.com/u/0/b/104480031003985359301/104480031003985359301/posts" title="Google+"><i class="fa fa-google-plus-square"></i></a><a href="http://www.linkedin.com/company/2961816?trk=tyah&amp;trkInfo=tas%3Asoaps4%2Cidx%3A1-1-1" title="LinkedIn"><i class="fa fa-linkedin-square"></i></a></p>
+      </div>
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Soaps4Lives. &middot; <a href="#">Privacy </a>&middot; <a href="#">Terms</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+extends layout
+
+block content
+	.container
+		h1 Thank you for message! 
+		h4 Here is what you have sent us.
+		p
+			| Name: 
+			=name
+		p
+			| Email: 
+			=email
+		p
+			| Organisation: 
+			=orgnisation
+		p
+			| Position: 
+			=position
+		p
+			| Phone: 
+			=phone
+		p
+			| Message: 
+			=message
+		hr
+		p
+			| You will be navigate back to index page in 
+			span#countdown 5 
+			| seconds.
+		script(type='text/javascript').
+			var countdown = parseInt($('#countdown').text().trim());
+			setInterval(function(){
+				console.log(countdown);
+				if (countdown === 0) {
+					window.location.href = 'index';
+				} else {
+					countdown--;
+					$('#countdown').text(countdown + " ");
+				}
+			}, 1000);

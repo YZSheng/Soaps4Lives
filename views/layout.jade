@@ -1,0 +1,53 @@
+doctype 5
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name='keywords', content='soaps, lives, ngo, npo, green, recycling')
+		meta(name='description', content='Soaps4Lives')
+		meta(name='author', content='Sheng Yunzhou')
+		title= 'Soaps4Lives'
+		link(rel='shortcut icon', href='./images/favicon.png')
+		link(rel='stylesheet', href='/stylesheets/bootstrap/bootstrap.css')
+		link(rel='stylesheet', href='/stylesheets/font-awesome.css')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Crete+Round')
+		link(rel='stylesheet', href='/stylesheets/page.css')
+		//- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+		// [if gt IE 9] <!
+		script(type='text/javascript', src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+		script(type='text/javascript', src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+		// <![endif]
+		script(type='text/javascript', src='./javascripts/lib/jquery/jquery-1.10.2.min.js')
+		script(type='text/javascript', src='./javascripts/vendor/bootstrap/bootstrap.min.js')
+		script(type='text/javascript').
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-46910022-1', 'soaps4lives.com');
+			ga('send', 'pageview');
+	body
+		.navbar.navbar-inverse.navbar-fixed-top
+			.container
+				.nav-header
+					button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand#logo(href='index')
+				.navbar-collapse.collapse
+					ul.nav.navbar-nav
+						li
+							a(href='index') Home
+						li
+							a(href='about') About
+						li
+							a(href='partners') Partners
+						li
+							a(href='serv_prog') Services &amp; Programmes
+						li
+							a(href='get_involved') Get Involved
+		block content
+		include footer
