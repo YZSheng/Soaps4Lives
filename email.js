@@ -8,7 +8,7 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
 	port: 993,
 	auth: {
 		user: "contact@soaps4lives.com",
-		pass: "S4L2014"
+		pass: "*****"
 	}
 });
 
